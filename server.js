@@ -3,7 +3,11 @@ const app = express()
 require('dotenv').config()
 
 
-
+app.get('/api/home',(req,res)=>(
+    res.send(
+        `<h1> HOME PAGE </h1>`
+    )
+))
 app.get('/api/get',(req,res)=>{
     res.send(
         `<h1> API IS WORKING FINE </h1>`
